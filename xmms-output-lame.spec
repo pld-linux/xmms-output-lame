@@ -5,7 +5,7 @@ Version:	0.2.1
 Release:	4
 License:	GPL
 Group:		Development/Libraries
-Source0:	http://prdownloads.sourceforge.net/my-xmms-plugs/out_lame-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/my-xmms-plugs/out_lame-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	lame-libs-devel
