@@ -16,10 +16,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_prefix		/usr/X11R6
 
 %description 
-This plugin allows xmms to play sounds though LAME mp3 encoder..
+This plugin allows xmms to play sounds though LAME mp3 encoder.
 
 %description -l pl
-Ta wtyczka pozwala xmms'owi odtwarzaæ muzykê poprzez enkoder mp3 LAME..
+Ta wtyczka pozwala xmms-owi odtwarzaæ muzykê poprzez koder mp3 LAME.
 
 %prep
 %setup -q -n out_lame
