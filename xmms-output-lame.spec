@@ -17,7 +17,7 @@ Requires:	xmms
 Provides:	xmms-output-plugin
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%description 
+%description
 This plugin allows xmms to play sounds though LAME mp3 encoder.
 
 %description -l pl
