@@ -2,7 +2,7 @@ Summary:	Mp3 output plugin for XMMS
 Summary(pl):	Wtyczka dla XMMS kompresuj±ca wyj¶cie do plików mp3
 Name:		xmms-output-lame
 Version:	0.2.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Libraries
 Source0:	http://dl.sourceforge.net/my-xmms-plugs/out_lame-%{version}.tar.gz
@@ -11,12 +11,11 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	lame-libs-devel
 BuildRequires:	libtool
+BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel
 Requires:	xmms
 Provides:	xmms-output-plugin
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_xmms_plugin_dir	%(xmms-config --output-plugin-dir)
 
 %description 
 This plugin allows xmms to play sounds though LAME mp3 encoder.
@@ -41,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	libdir=%{_xmms_plugin_dir}
+	libdir=%{xmms_output_plugindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -49,4 +48,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README NEWS AUTHORS ChangeLog
-%attr(755,root,root) %{_xmms_plugin_dir}/*
+%attr(755,root,root) %{xmms_output_plugindir}/*
