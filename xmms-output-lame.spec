@@ -2,7 +2,7 @@ Summary:	Mp3 output plugin for XMMS
 Summary(pl):	Wtyczka dla XMMS kompresuj±ca wyj¶cie do plików mp3
 Name:		xmms-output-lame
 Version:	0.2.2
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Libraries
 Source0:	http://dl.sourceforge.net/my-xmms-plugs/out_lame-%{version}.tar.gz
