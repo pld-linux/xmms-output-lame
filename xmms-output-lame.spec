@@ -1,5 +1,5 @@
 Summary:	MP3 output plugin for XMMS
-Summary(pl):	Wtyczka dla XMMS kompresuj±ca wyj¶cie do plików MP3
+Summary(pl):	Wtyczka wyj¶ciowa dla XMMS-a kompresuj±ca wyj¶cie do plików MP3
 Name:		xmms-output-lame
 Version:	0.2.2
 Release:	3
@@ -18,10 +18,10 @@ Provides:	xmms-output-plugin
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This plugin allows xmms to play sounds though LAME MP3 encoder.
+This plugin allows XMMS to play sounds though LAME MP3 encoder.
 
 %description -l pl
-Ta wtyczka pozwala xmms-owi odtwarzaæ muzykê poprzez koder MP3 LAME.
+Ta wtyczka pozwala XMMS-owi odtwarzaæ muzykê poprzez koder MP3 LAME.
 
 %prep
 %setup -q -n out_lame
