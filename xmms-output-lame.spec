@@ -8,8 +8,9 @@ Group:		Development/Libraries
 Source0:	http://prdownloads.sourceforge.net/my-xmms-plugs/out_lame-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	xmms-devel
 BuildRequires:	lame-libs-devel
+BuildRequires:	libtool
+BuildRequires:	xmms-devel
 Requires:	xmms
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
