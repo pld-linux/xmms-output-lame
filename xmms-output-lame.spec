@@ -5,7 +5,7 @@ Version:	0.2.1
 Release:	1
 License:	GPL
 Group:		Development/Libraries
-Source0:	out_lame-%{version}.tar.gz
+Source0:	http://telia.dl.sourceforge.net/sourceforge/my-xmms-plugs/out_lame-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	xmms-devel
