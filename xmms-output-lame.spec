@@ -27,8 +27,8 @@ Ta wtyczka pozwala xmms-owi odtwarzaæ muzykê poprzez koder mp3 LAME.
 %build
 libtoolize -c -f
 aclocal -I macros
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
